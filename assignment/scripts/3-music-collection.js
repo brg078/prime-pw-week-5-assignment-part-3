@@ -1,7 +1,7 @@
 console.log('***** Music Collection *****');
 
 let collection = [];
-//task 1
+//end task 1
 
 function addToCollection (title, artist, yearPublished){
     console.log('in add to collection');
@@ -11,28 +11,27 @@ function addToCollection (title, artist, yearPublished){
         yearPublished,
     };
     collection.push(newAlbum);
+    console.log(newAlbum);
     return newAlbum;
-}//end add to collection
+}//end add to collection task 2
+
+//task 3
+addToCollection('Ride the Lightning', 'Metallica', '1984');
+addToCollection('Green Onions', 'Booker T. and the MG\'s', '1962');
+addToCollection('...And then there was X', 'DMX', '1999');
+addToCollection('Dummy', 'Portishead', '1994');
+addToCollection('Blue Album', 'Weezer', '1994');
+addToCollection('Paranoid', 'Black Sabbath', '1970');
+
+console.log(collection);
+//end task 3
 
 
 
-
-
-
-
-
-
-
-
-
-let album1 = {
-    title: 'xxx',
-    artist: 'xxxartist',
-    yearPublished: 2001,
-}  //end album1
-
-addToCollection(album1);
-
+//
+//
+//
+//
 
 
 //function findByArtist(artist){
