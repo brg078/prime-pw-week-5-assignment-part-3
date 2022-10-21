@@ -26,12 +26,27 @@ addToCollection('Paranoid', 'Black Sabbath', '1970');
 console.log(collection);
 //end task 3
 
+function showCollection(myMusic) {
+    console.log('in showCollection function');
+    for (i=0; i<myMusic.length; i++) {
+        console.log(myMusic[i].title.toUpperCase() + ' by ' + myMusic[i].artist.toUpperCase() + ' published in ' + myMusic[i].yearPublished.toUpperCase());
+    }  
+}
+
+showCollection(collection);
+//end task 4
 
 
-//
-//
-//
-//
+
+
+
+
+
+
+
+
+
+
 
 
 //function findByArtist(artist){
