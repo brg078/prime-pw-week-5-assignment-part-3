@@ -37,38 +37,18 @@ showCollection(collection);
 //end task 4
 
 
+function findByArtist(artistSearch){
+    console.log('List of album matches found for', artistSearch,':')
+    let albumList =[];
+    for (i=0; i<collection.length; i++){
+        if (collection[i].artist == artistSearch ){
+            albumList.push(collection[i].title);
+            console.log(albumList);        
+        }
 
+    }       
+}
 
-
-
-
-
-
-
-
-
-
-
-//function findByArtist(artist){
-//    let artistList =[];
-//    for (let album of collection){
-//      if(album.Artist===artist){
-//        artistList.push(album)
- //     }
- //   }return artistList;
- // }
-
- // function findByArtist(artist){
- //     artistAlbums = [];
- //     for (let i = 0; i < collection.length; i++){
- //         if (collection[i].artist.toUpperCase() === artist.toUpperCase()){
- //             //console.log("Found artist album!");
- //             foundAlbum = collection[i].title;
- //             artistAlbums.push(foundAlbum);
-  //        } 
-   //       else {
- //             //console.log(artist, ' is not found in this album');
-   //       }
-  //    }
-   //   return(artistAlbums);
-  //}
+findByArtist('Black Sabbath');
+findByArtist('Daft Punk');
+//end task 5
