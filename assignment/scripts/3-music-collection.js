@@ -52,3 +52,22 @@ function findByArtist(artistSearch){
 findByArtist('Black Sabbath');
 findByArtist('Daft Punk');
 //end task 5
+
+function findByArtistAndYear(artistSearch, yearSearch){
+    console.log('List of album matches found for', artistSearch,'and', yearSearch,':')
+    let albumList =[];
+    for (i=0; i<collection.length; i++){
+        if (collection[i].artist == artistSearch && collection[i].yearPublished == yearSearch){
+            albumList.push(collection[i]);
+            console.log(albumList);        
+       // } else if (artistSearch.empty || yearSearch.empty) {
+       //     console.log(collection)
+       // unsure on the field left empty
+        }
+
+    }       
+}
+
+findByArtistAndYear('Black Sabbath', 1970);
+findByArtistAndYear('Daft Punk', 1999);
+findByArtistAndYear();
